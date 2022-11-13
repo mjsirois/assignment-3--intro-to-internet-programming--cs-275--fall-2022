@@ -15,6 +15,9 @@ You will need to implement from scratch development and production Gulp tracks f
 
 ---
 
+### HTML
+* Do not edit `index.html`. All the HTML required for this project is already in place. Any DOM manipulations _must_ take place via JavaScript.
+
 ## ❖・Due・❖
 Tuesday, 29 November 2022, at 12:00 PM.
 
