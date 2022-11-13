@@ -31,6 +31,23 @@ Before you begin, **update Node, NPM, ESLint, and Stylelint**
 ### HTML
 * Do not edit `index.html`. All the HTML required for this project is already in place. Any DOM manipulations _must_ take place via JavaScript.
 
+### Task Running with Gulp
+As mentioned in the introduction, you must employ Gulp as the task runner with workflows for development and production.
+
+#### Development
+* Your CSS must validate using the enclosed `.stylelintrc.json` file.
+* Your JavaScript must validate using the included `.eslintrc.json` file.
+* Your JavaScript must be transpiled to ES5.
+* The development, or dev, track must lint/validate CSS and JavaScript each time you save a `.css` or `.js` file.
+* Additionally, the development track must also refresh the browser when any of these files have changed.
+* `gulp serve` triggers the dev track.
+
+#### Production
+* The production, or prod, track must compress all the aforementioned languages. *Do not lint them*, as they have already been linted in the development track.
+* `gulp build` should load the entire production environment into a folder called `prod`, which must be fully self-sufficient and contain all the required files — compressed and linted — of the web page. **Note**: Check that your entire project works as a standalone web app in the `prod` folder. You can do so by moving the `prod` folder elsewhere in your file system before submitting, then launching `index.html`.
+
+---
+
 ## ❖・Due・❖
 Tuesday, 29 November 2022, at 12:00 PM.
 
