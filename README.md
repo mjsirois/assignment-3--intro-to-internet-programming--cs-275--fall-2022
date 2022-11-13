@@ -23,6 +23,10 @@ Tuesday, 29 November 2022, at 12:00 PM.
 
 ---
 
+**Tip**: To ensure the files required by your project are not being ignored, you’re strongly advised to clone your repo into a different folder on your computer, or to a different computer altogether.
+
+---
+
 ## ❖・Submission・❖
 You will need to issue a pull request back into the original repo, the one from which your fork was created for this project. See the **Issuing Pull Requests** section of [this site](http://code-warrior.github.io/tutorials/git/github/index.html) for help on how to submit your assignment.
 
