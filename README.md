@@ -15,6 +15,9 @@ You will need to implement from scratch development and production Gulp tracks f
 
 ---
 
+## ❖・Rules・❖
+Before you begin, **update Node, NPM, ESLint, and Stylelint**
+
 ### HTML
 * Do not edit `index.html`. All the HTML required for this project is already in place. Any DOM manipulations _must_ take place via JavaScript.
 
