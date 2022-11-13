@@ -15,6 +15,11 @@ You will need to implement from scratch development and production Gulp tracks f
 
 ---
 
+## ❖・Due・❖
+Tuesday, 29 November 2022, at 12:00 PM.
+
+---
+
 ## ❖・Submission・❖
 You will need to issue a pull request back into the original repo, the one from which your fork was created for this project. See the **Issuing Pull Requests** section of [this site](http://code-warrior.github.io/tutorials/git/github/index.html) for help on how to submit your assignment.
 
