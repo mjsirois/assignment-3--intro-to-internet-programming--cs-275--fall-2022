@@ -19,7 +19,7 @@ You will need to implement from scratch development and production Gulp tracks f
 Before you begin, **update Node, NPM, ESLint, and Stylelint**
 
 ### General
-* Do not alter the scaffold of this project, especially the `.gitignore` files. Should you need to defeat this rule, explain so in a comment in the code, and also as a commit message.
+* Do not alter the scaffold of this project, especially the `.gitignore` files. Should you need to defeat this rule, explain so in a comment in the code, and also in a commit message.
 * The user interface of your project should approximate as close as possible the rendering in the video. Visual rules are defined under the **CSS** section below.
 * Do not resize the images in the `img` folder.
 * Do not add/delete images to/from the `img` folder.
