@@ -31,6 +31,16 @@ Before you begin, **update Node, NPM, ESLint, and Stylelint**
 ### HTML
 * Do not edit `index.html`. All the HTML required for this project is already in place. Any DOM manipulations _must_ take place via JavaScript.
 
+### CSS
+* No CSS libraries may be used.
+* Use *only* the Open Sans typeface, which is included in the `head` element of `index.html`.
+* Keep the default font size to 16 pixels.
+* Set the content leading to `1.4`.
+* Set the font size of `h1` to 32 pixels.
+* Set the leading of the `h1` element to `38px`.
+* Set the width of each slide in your carousel to `640` pixels, with left/right padding of `20px`.
+* Place *all* your styles in `main.css`.
+
 ### Task Running with Gulp
 As mentioned in the introduction, you must employ Gulp as the task runner with workflows for development and production.
 
