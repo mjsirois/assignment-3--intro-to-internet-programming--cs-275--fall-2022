@@ -74,13 +74,12 @@ let serve = () => {
             ]
         }
     });
+
+    watch(`js/main.js`, series(lintJS, transpileJSForDev)).on(`change`, reload);
+
+    watch(`styles/main.css`, series(lintCSS)).on(`change`, reload);
+
 };
-
-watch(`js/main.js`, series(lintJS, transpileJSForDev))
-    .on(`change`, reload);
-
-watch(`style/main.css`, series(lintCSS))
-    .on(`change`, reload);
 
 let browserChoice = `default`;
 
