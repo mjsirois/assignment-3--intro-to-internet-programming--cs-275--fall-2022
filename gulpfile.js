@@ -1,6 +1,7 @@
 const { src, dest, series, watch } = require(`gulp`),
     CSSLinter = require(`gulp-stylelint`),
     babel = require(`gulp-babel`),
+    imageCompressor = require(`gulp-image`),
     htmlCompressor = require(`gulp-htmlmin`),
     cssCompressor = require(`gulp-clean-css`),
     jsCompressor = require(`gulp-uglify`),
@@ -44,6 +45,20 @@ let compressCSS = () => {
 
 exports.compressCSS = compressCSS;
 
+let compressImages = () => {
+    return src(`img/*`)
+        .pipe(imageCompressor({
+            jpegRecompress: [`--strip`, `--quality`, `medium`, `--min`, 40,
+                `--max`, 80],
+            mozjpeg: [`-optimize`, `-progressive`],
+            svgo: [`--enable`, `cleanupIDs`, `--disable`, `convertColors`],
+            quiet: false
+        }))
+        .pipe(dest(`prod/img`));
+};
+
+exports.compressImages = compressImages;
+
 let transpileJSForDev = () => {
     return src(`js/main.js`)
         .pipe(babel())
@@ -60,6 +75,12 @@ let transpileJSForProd = () => {
 };
 
 exports.transpileJSForProd = transpileJSForProd;
+
+let jsonForProd = () => {
+    return src([
+        `json/*.json`])
+        .pipe(dest(`prod`));
+};
 
 let serve = () => {
     browserSync({
@@ -99,7 +120,9 @@ exports.serve = series(
 exports.build = series(
     compressHTML,
     compressCSS,
-    transpileJSForProd
+    transpileJSForProd,
+    compressImages,
+    jsonForProd
 );
 
 exports.default = serve;
